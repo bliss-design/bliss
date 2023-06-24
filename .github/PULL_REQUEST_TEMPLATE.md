@@ -25,7 +25,7 @@
   Go through this checklist and confirm each one. If a box is checked, it can be marked by replacing the space inside the square brackets with an 'x' (like this: [x]).
 -->
 
-- [ ] I have read the [contributing](https://github.com/bliss-design/bliss/blob/main/CONTRIBUTING.md) document.
+- [ ] I have read the [contributing](../CONTRIBUTING.md) document.
 - [ ] My changes are in a separate branch to the target branch.
 - [ ] My code follows the style guidelines of this project.
 - [ ] I have performed a self-review of my own code.
