@@ -1,6 +1,28 @@
-# Bliss
+# @bliss/with-as-polymorphic
 
 **This utility is intended for internal use only and should not be used publicly.**
+
+## Installation
+
+To install this package, you can use npm, yarn or pnpm:
+
+npm:
+
+```sh
+npm install @bliss/with-as-polymorphic
+```
+
+yarn:
+
+```sh
+yarn add @bliss/with-as-polymorphic
+```
+
+pnpm:
+
+```sh
+pnpm install @bliss/with-as-polymorphic
+```
 
 ## Contribution
 
