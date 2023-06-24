@@ -1,0 +1,56 @@
+{
+  "name": "@bliss/with-polymorphic",
+  "version": "1.0.0",
+  "description": "This utility is intended for internal use only and should not be used publicly",
+  "keywords": [
+    "bliss",
+    "react",
+    "component"
+  ],
+  "homepage": "https://github.com/bliss-design/bliss",
+  "bugs": {
+    "url": "https://github.com/bliss-design/bliss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bliss-design/bliss.git",
+    "directory": "packages/with-polymorphic"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Joe Takara",
+    "email": "anuchit.boonsom@gmail.com"
+  },
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@types/react-dom": "^18.2.6",
+    "react": "^18.0.0"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.0.22",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
