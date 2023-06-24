@@ -1,18 +1,63 @@
 {
+  "name": "bliss",
+  "version": "1.0.0",
   "private": true,
+  "description": "This utility is intended for internal use only and should not be used publicly",
+  "keywords": [
+    "bliss",
+    "react",
+    "component"
+  ],
+  "homepage": "https://github.com/bliss-design/bliss",
+  "bugs": {
+    "url": "https://github.com/bliss-design/bliss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bliss-design/bliss.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Joe Takara",
+    "email": "anuchit.boonsom@gmail.com"
+  },
+  "sideEffects": false,
   "scripts": {
     "build": "turbo run build",
+    "changeset": "changeset",
+    "changeset:release": "changeset publish",
+    "changeset:version": "changeset version",
+    "clean": "pnpm clean:turbo && pnpm clean:lock && pnpm clean:node-modules && pnpm install --hoist",
+    "clean:lock": "rm -rf ./pnpm-lock.yaml",
+    "clean:next": "rimraf ./apps/*/.next && rimraf ./packages/*/.next",
+    "clean:node-modules": "rimraf ./apps/*/node_modules && rimraf ./packages/*/node_modules && rm -rf ./node_modules",
+    "clean:turbo": "turbo clean && rimraf ./node_modules/.cache/turbo && rimraf ./apps/*/.turbo && rimraf ./packages/*/.turbo",
     "dev": "turbo run dev",
+    "format": "prettier --write .",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "prepare": "husky install",
+    "storybook": "turbo run storybook",
+    "typecheck": "turbo typecheck"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@commitlint/types": "^17.4.4",
     "@turbo/gen": "^1.9.7",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.5.1",
+    "rimraf": "^5.0.1",
+    "tsup": "7.0.0",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@7.15.0",
-  "name": "folio"
+  "packageManager": "pnpm@7.15.0"
 }
