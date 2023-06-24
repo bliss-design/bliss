@@ -1,6 +1,28 @@
-# Bliss
+# Storybook
 
 **This utility is intended for internal use only and should not be used publicly.**
+
+## Getting Started
+
+To install this package, you can use npm, yarn or pnpm:
+
+Using npm:
+
+```sh
+npm run storybook
+```
+
+Using yarn:
+
+```sh
+yarn storybook
+```
+
+Using pnpm:
+
+```sh
+pnpm storybook
+```
 
 ## Contribution
 
